@@ -1,10 +1,14 @@
+
 import {
   SET_USERS,
   SET_USER_DETAIL,
+  SET_LOADING,
 } from './actions';
 
 const initialState = {
-  users: []
+  users: [],
+  userDetail: null,
+  loading: false
 };
 
 function myApp(state = initialState, action) {
@@ -14,9 +18,13 @@ function myApp(state = initialState, action) {
         users: action.users || [],
         loading: false
       });
-      case SET_USER_DETAIL:
+    case SET_USER_DETAIL:
       return Object.assign({}, state, {
         userDetail: action.userDetail || {}
+      });
+    case SET_LOADING:
+      return Object.assign({}, state, {
+        loading: action.loading
       });
     default:
       return state

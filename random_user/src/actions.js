@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const SET_USERS = 'SET_USERS';
 export const SET_USER_DETAIL = 'SET_USER_DETAIL';
+export const SET_LOADING = 'SET_LOADING';
 
 export function fetchUsers(num) {
 	return (dispatch) => {
@@ -39,4 +40,11 @@ export function setUserDetail(userDetail) {
 		type: SET_USER_DETAIL,
 		userDetail,
 	};
+};
+
+export function setLoading(loading) {
+  return {
+    type: SET_LOADING,
+    loading,
+  };
 };
