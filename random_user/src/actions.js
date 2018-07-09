@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+export const SET_USERS = 'SET_USERS';
+
 export function fetchUsers() {
 	return (dispatch) => {
 		axios({
@@ -8,7 +10,8 @@ export function fetchUsers() {
 		}).then(function(response) {
 			console.log('...');
 			if(response && response.data && response.data.results) {
-				console.log(response.data.results);
+				//console.log(response.data.results);
+				dispatch(setUsers(response.data.results));
 			} else {
 				console.log('No results in the response.');
 			}
@@ -20,5 +23,12 @@ export function fetchUsers() {
 		.then(function() {
 			// always executed
 		});
+	};
+};
+
+export function setUsers(users) {
+	return{
+		type: SET_USERS,
+		users,
 	};
 };

@@ -4,10 +4,11 @@ import './App.css';
 
 import { fetchUsers } from './actions'
 
+import UserList from './components/UserList';
+
 class App extends Component {
 
   componentWillMount() {
-    console.log('...');
     this.props.dispatch(fetchUsers());
   }
 
@@ -17,12 +18,17 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">xintong</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div>
+        <UserList users={this.props.users} />
+        </div>
       </div>
     );
   }
 }
 
-export default connect()(App);
+
+const mapStateToProps = state => ({
+  users: state.users,
+});
+
+export default connect(mapStateToProps)(App);
