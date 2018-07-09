@@ -1,5 +1,6 @@
 import {
   SET_USERS,
+  SET_USER_DETAIL,
 } from './actions';
 
 const initialState = {
@@ -12,6 +13,10 @@ function myApp(state = initialState, action) {
       return Object.assign({}, state, {
         users: action.users || [],
         loading: false
+      });
+      case SET_USER_DETAIL:
+      return Object.assign({}, state, {
+        userDetail: action.userDetail || {}
       });
     default:
       return state

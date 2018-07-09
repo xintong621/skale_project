@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { Router, Switch, Route } from 'react-router'
 import './App.css';
+
+import history from './routerHistory';
 
 import { fetchUsers } from './actions'
 
 import UserList from './components/UserList';
+import UserDetail from './components/UserDetail';
 
 class App extends Component {
 
@@ -15,12 +19,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">xintong</h1>
-        </header>
-        <div>
-        <UserList users={this.props.users} />
-        </div>
+       <Router history={history}>
+          <Switch>
+            <Route exact={true} path="/" render={()=>
+              <div>
+                <UserList users={this.props.users} />
+              </div>
+            }/>
+            <Route exact={true} path="/detail" render={()=><UserDetail userDetail={this.props.userDetail} />}/>
+          </Switch>
+        </Router>
       </div>
     );
   }
@@ -29,6 +37,7 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   users: state.users,
+  userDetail: state.userDetail,
 });
 
 export default connect(mapStateToProps)(App);

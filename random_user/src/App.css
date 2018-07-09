@@ -1,5 +1,15 @@
 .App {
-  text-align: center;
+  max-width: 325px;
+  margin: auto;
+  align-content: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  margin-top: 50px;
+  height: 85vh;
+  overflow: scroll;
 }
 
 .App-logo {
@@ -7,22 +17,23 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App button, .App input {
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #555;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-style: solid;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App button {
+  cursor: pointer;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App button:disabled {
+  cursor: not-allowed;
+  border-color: #eee;
+  color: #eee;
 }
