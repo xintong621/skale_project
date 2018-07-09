@@ -12,11 +12,6 @@
   overflow: scroll;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App button, .App input {
   border-radius: 0;
   border-width: 2px;

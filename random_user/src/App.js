@@ -40,7 +40,7 @@ class App extends Component {
                 <UserList users={users} />
               </div>
             }/>
-            <Route exact={true} path="/detail" render={()=><UserDetail userDetail={this.props.userDetail} />}/>
+            <Route exact={true} path="/detail" render={()=><UserDetail userDetail={userDetail} />}/>
           </Switch>
         </Router>
       </div>
@@ -52,6 +52,7 @@ class App extends Component {
 const mapStateToProps = state => ({
   users: state.users,
   userDetail: state.userDetail,
+  loading: state.loading
 });
 
 export default connect(mapStateToProps)(App);

@@ -1,4 +1,3 @@
-
 import {
   SET_USERS,
   SET_USER_DETAIL,

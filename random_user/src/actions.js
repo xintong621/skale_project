@@ -6,11 +6,12 @@ export const SET_LOADING = 'SET_LOADING';
 
 export function fetchUsers(num) {
 	return (dispatch) => {
+		dispatch(setLoading(true));
 		axios({
 			method: 'GET',
 			url: `https://randomuser.me/api/?results=${num||1000}`,
 		}).then(function(response) {
-			console.log('...');
+			//handle success
 			if(response && response.data && response.data.results) {
 				//console.log(response.data.results);
 				dispatch(setUsers(response.data.results));
