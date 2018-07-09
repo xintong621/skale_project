@@ -3,7 +3,7 @@
 data source: https://randomuser.me/
 
 * put the folder in your local machine
-* open the folder
+* open the folder random_user
 * run `npm install`
 * run `npm start`
 * try the app on localhost:3000
