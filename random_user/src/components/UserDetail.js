@@ -1,1 +1,1 @@
-UserDetail.js
+import React from 'react';
