@@ -25,22 +25,24 @@ class App extends Component {
   }
 
   render() {
+    console.log("This is the process.env", process.env.PUBLIC_URL);
+    console.log(process.env.PUBLIC_URL);
     const { users, userDetail, loading } = this.props;
     return (
       <div className="App">
        <Router history={history} basename={process.env.PUBLIC_URL}>
           <Switch>
-            <Route exact={true} path="/" render={()=>
+            <Route exact path="/" render={(routerProps)=>
               <div>
                 <h4>How many users do you want to get?</h4>
                 <input value={this.state.num} onChange={this.resetNum.bind(this)} />
                 <button disabled={loading} onClick={
                   function () { this.props.dispatch(fetchUsers(this.state.num)); }.bind(this)
                 }>{loading ? 'loading...' : 'Refresh!'}</button>
-                <UserList users={users} />
+                <UserList users={users} routerProps={routerProps}/>
               </div>
             }/>
-            <Route exact={true} path="/detail" render={()=><UserDetail userDetail={userDetail} />}/>
+            <Route exact path="/detail" render={(routerProps)=><UserDetail userDetail={userDetail} routerProps={routerProps}/>}/>
           </Switch>
         </Router>
       </div>

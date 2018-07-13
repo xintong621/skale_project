@@ -8,7 +8,7 @@ import { setUserDetail } from '../actions';
 import './User.css';
 
 const User = ({ userDetail, dispatch }) => {
-	console.log(userDetail);
+	//console.log(userDetail);
 	if(!userDetail) return <div> No information of the user. </div>;
     const { name, email, picture } = userDetail;
     
