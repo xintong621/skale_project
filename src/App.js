@@ -28,7 +28,7 @@ class App extends Component {
     const { users, userDetail, loading } = this.props;
     return (
       <div className="App">
-       <Router history={history}>
+       <Router history={history} basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route exact={true} path="/" render={()=>
               <div>
