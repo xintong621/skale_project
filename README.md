@@ -39,7 +39,7 @@
 
 Since we do not have a provisioned development environment, you'll need to install the following tools manually on your OS. You should be able to work on any OS, but so far only Windows and OSX have been tested.
 
-* [NodeJS](https://nodejs.org/en/). Any newer version should work, but I am working on `10.8.0`. I highly recommend using [NVM](https://github.com/creationix/nvm) to install NodeJS as it allows you to easily work with multiple versions of NodeJS on the same machine. 
+* [NodeJS](https://nodejs.org/en/). Any newer version should work, but I am working on `10.11.0`. I highly recommend using [NVM](https://github.com/creationix/nvm) to install NodeJS as it allows you to easily work with multiple versions of NodeJS on the same machine. 
 * [Yarn](yarnpkg.com/en/docs/install). We'll be using `yarn` instead of `npm` to manage our depedencies.
 
 That's it! Everything else is installed via `yarn`.
