@@ -5,9 +5,11 @@
 - [Prequisites](#prequisites)
 - [The Stack](#the-stack)
 - [Setup](#setup)
- - [Requirements](#requirements)
- - [Get Started](#get-started)
- - [Best Practices](#best-practices)
+  - [Requirements](#requirements)
+  - [Get Started](#get-started)
+  - [iOS-Specific Steps](#ios-specific-steps)
+  - [Android-Specific Steps](#android-specific-steps)
+  - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
 - [Notes](#notes)
 
@@ -52,7 +54,7 @@ Getting started is very easy, just do the following:
 1. Open your terminal and `cd` to the project directory
 2. Install dependencies by running `yarn install`
 
-#### iOS-Specific Steps:
+### iOS-Specific Steps:
 1. Start the iOS simulator by running `react-native run-ios`
 
 ### Android-Specific Steps:
