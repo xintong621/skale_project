@@ -5,10 +5,11 @@
 - [Prequisites](#prequisites)
 - [The Stack](#the-stack)
 - [Setup](#setup)
-  - [Requirements](#requirements)
-  - [Get Started](#get-started)
-  - [Best Practices](#best-practices)
+ - [Requirements](#requirements)
+ - [Get Started](#get-started)
+ - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
+- [Notes](#notes)
 
 ## What is ButlerDelivery?
 
@@ -45,10 +46,29 @@ Since we do not have a provisioned development environment, you'll need to insta
 That's it! Everything else is installed via `yarn`.
 
 ### Get Startted
-...
 
-### Best Practices
+Getting started is very easy, just do the following:
+
+1. Open your terminal and `cd` to the project directory
+2. Install dependencies by running `yarn install`
+
+#### iOS-Specific Steps:
+1. Start the iOS simulator by running `react-native run-ios`
+
+### Android-Specific Steps:
+1. Open a android virtual device on Genymotion
+2. Start the Android simulator by running `react-native run-android`
+
+#### Best Practices
 (Same as demeter???)...
 
 ## Readme Todos
 ...
+
+## Notes
+### Why not using Expo (With Ejecting)?
+* Ejecting it to ExpoKit has a trade-off of features of Expo, e.g. you cannot share via QR code
+* When ejecting to ExpoKit you are limited to the react native version that is supported by ExpoKit at that point in time
+* The standard Hello World app is about 25MB big (because of the integrated libraries)
+* Normally Expo SDKs release within 2-3 weeks after a corresponding React Native release.
+* [Reference](https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native/49324689#49324689)
