@@ -13,6 +13,8 @@
   - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
 - [Notes](#notes)
+  - [Why not using Expo (With Ejecting)?](#why-not-using-expo)
+  - [Why using react-native 0.55.4 (Not the up-to-date version)?](#why-using-react-native-0.55.4)
 
 ## What is ButlerDelivery?
 .....
@@ -41,7 +43,7 @@ That's it! Everything else is installed via `yarn`.
 ## The Stack
 
 * React Native CLI 1.2.0
-* React Native v0.55.4 (there might be a problem for react-native version higher than 0.56.0 so we need to downgrade the version manually)
+* React Native v0.55.4
 * Node.js v10.11.0
 * Watchman v4.9.1
 
@@ -75,3 +77,6 @@ es-lint/flow...
 * The standard Hello World app is about 25MB big (because of the integrated libraries)
 * Normally Expo SDKs release within 2-3 weeks after a corresponding React Native release.
 * [Reference](https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native/49324689#49324689)
+
+### Why using react-native 0.55.4 (Not the up-to-date version)?
+* there might be a problem for react-native version higher than 0.56.0 so we need to downgrade the version manually
