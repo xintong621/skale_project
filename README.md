@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [What is ButlerDelivery?](#what-is-ButlerDelivery)
+- [What is ButlerDelivery?](#what-is-butlerdelivery)
 - [Roadmap](#roadmap)
 - [Prequisites](#prequisites)
   - [Requirements](#requirements)
@@ -13,8 +13,8 @@
   - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
 - [Notes](#notes)
-  - [Why not using Expo(With Ejecting)?](#why-not-using-expo(with-ejecting))
-  - [Why using react-native 0.55.4 (Not the up-to-date version)?](#why-using-react-native-0.55.4)
+  - [Why not using Expo(With Ejecting)?](#)
+  - [Why using react-native 0.55.4 (Not the up-to-date version)?](#)
 
 ## What is ButlerDelivery?
 .....
