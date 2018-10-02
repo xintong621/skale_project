@@ -13,7 +13,7 @@
   - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
 - [Notes](#notes)
-  - [Why not using Expo (With Ejecting)?](#why-not-using-expo (with-ejecting)?)
+  - [Why not using Expo (With Ejecting)?](#why-not-using-expo(with-ejecting)?)
   - [Why using react-native 0.55.4 (Not the up-to-date version)?](#why-using-react-native-0.55.4)
 
 ## What is ButlerDelivery?
@@ -71,12 +71,12 @@ es-lint/flow...
 ...
 
 ## Notes
-### Why not using Expo (With Ejecting)?
+### Why not using Expo(With Ejecting)?
 * Ejecting it to ExpoKit has a trade-off of features of Expo, e.g. you cannot share via QR code
 * When ejecting to ExpoKit you are limited to the react native version that is supported by ExpoKit at that point in time
 * The standard Hello World app is about 25MB big (because of the integrated libraries)
 * Normally Expo SDKs release within 2-3 weeks after a corresponding React Native release.
 * [Reference](https://stackoverflow.com/questions/39170622/what-is-the-difference-between-expo-and-react-native/49324689#49324689)
 
-### Why using react-native 0.55.4 (Not the up-to-date version)?
+### Why using react-native 0.55.4(Not the up-to-date version)?
 * there might be a problem for react-native version higher than 0.56.0 so we need to downgrade the version manually
