@@ -13,7 +13,7 @@
   - [Best Practices](#best-practices)
 - [Readme Todos](#readme-todos)
 - [Notes](#notes)
-  - [Why not using Expo (With Ejecting)?](#why-not-using-expo(with-ejecting)?)
+  - [Why not using Expo(With Ejecting)?](#why-not-using-expo(with-ejecting))
   - [Why using react-native 0.55.4 (Not the up-to-date version)?](#why-using-react-native-0.55.4)
 
 ## What is ButlerDelivery?
