@@ -15,7 +15,6 @@
 - [Notes](#notes)
 
 ## What is ButlerDelivery?
-
 .....
 
 ## Roadmap
@@ -36,7 +35,7 @@ That's it! Everything else is installed via `yarn`.
 * Homebrew v1.7.6
 * (for Android) an up-to-date Android Studio
 * (for Android) Genemotion and an Android device
-* (for iOS) an up-to-date copy of Xcode (is xcode mac only???)
+* (for iOS) an up-to-date copy of Xcode
 * (for iOS) an iOS simulator and an iOS device
 
 ## The Stack
@@ -62,8 +61,9 @@ Getting started is very easy, just do the following:
 1. Open a android virtual device on Genymotion
 2. Start the Android simulator by running `react-native run-android`
 
-#### Best Practices
+### Best Practices
 (Same as demeter???)...
+es-lint/flow...
 
 ## Readme Todos
 ...
